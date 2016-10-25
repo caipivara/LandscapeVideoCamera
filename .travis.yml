@@ -1,5 +1,7 @@
 language: android
 
+jdk: oraclejdk8
+
 env:
   matrix:
     - ANDROID_TARGET=android-22 ANDROID_ABI=armeabi-v7a
@@ -13,7 +15,7 @@ android:
     - tools # to get the new `repository-11.xml`
     - tools # to install Android SDK tools 25.1.x (x = 6 right now)
     - platform-tools
-    - build-tools-24.0.0
+    - build-tools-23.0.0
     - android-22
     - android-23
     - extra-android-m2repository
